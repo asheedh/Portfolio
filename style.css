@@ -84,7 +84,7 @@ body{
     mask-image: url(Images/paint-mask.svg);
     mask-size:cover;
     mask-position: center;
-    width: 450px;
+    width: 600px;
     height: 450px;
     
 }
