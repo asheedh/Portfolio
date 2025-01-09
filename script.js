@@ -1,6 +1,13 @@
 const technicalCard = document.getElementById('technicalCard');
 const softCard = document.getElementById('softCard');
-const submit = document.getElementById("submit")
+const submit = document.getElementById("submit");
+const hamburger = document.getElementById("hamburger");
+const navbar = document.getElementById("navbar");
+
+hamburger.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    
+});
 
 technicalCard.addEventListener('click', (event) => {
     technicalCard.classList.add('active');
