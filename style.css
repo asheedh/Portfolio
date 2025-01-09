@@ -11,8 +11,6 @@ body{
     color:#ededed;
 }
 
-/* Header */
-
 .header{
     position: fixed;
     top: 0;
@@ -47,24 +45,6 @@ body{
 .navbar a:hover {
     color: #00abf0;
 }
-
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: #ededed;
-    transition: 0.3s ease;
-}
-
-/* Home  */
 
 #home{
     height: 100vh;
@@ -212,8 +192,6 @@ body{
 
 }
 
-/* About  */
-
 #about h1, #skills h1, #exp h1, #projects h1, #contact h1{
     font-size: xx-large;
     color:#00abf0;
@@ -321,8 +299,6 @@ body{
     color: #ededed;
     border:2px solid #ededed;
 }
-
-/* Skills  */
 
 .all_skills{
     display: flex;
@@ -460,7 +436,7 @@ body{
     align-items: center;
     padding: 80px;
     color: #00abf0;
-}
+    }
 
 .in_container1 {
     display:flex;
@@ -518,8 +494,6 @@ body{
     color: #ededed;
     border:2px solid #ededed;
 }
-
-/* Contact  */
 
 .contact {
     padding: 18px 36px;
@@ -664,180 +638,49 @@ body{
 }
 
 /* Responsive Design */
-
-/* Small screens */
-@media (max-width: 640px) {
-
-    /* Navigation or Header  */
-
-    .navbar {
-        display:none;
-        flex-direction: column;
-        background: #081b29;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        border-top: 2px solid #00abf0;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .navbar a {
-        margin: 15px 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    /* Home  */
-
-    #home{
-        justify-content: center;
-        flex-direction: column;
-    }
-    .home-content h1{
-        font-size: xx-large;
-    }
-    .home-content h3 {
-        font-size: 20px;
-    }
-    
-    .home-content p{
-        font-size: 14px;
-    }
-    
-    .home-content .btn-box{
+@media (max-width: 768px) {
+    .social-links {
         flex-direction: column;
         gap: 10px;
-        align-items: center;
-        width: 345px;
-        height: 100px;
-        padding: 12px;
-        margin-bottom: 4px;
     }
-    
-    #herobanner {
-        width: 300px;
-        height: 250px;
-    }
-    
-    .home-sci {
-        bottom: 20px;
-        width: 90%;
-        padding: 8px;
-    }
-
-    /* About */
-
-    #about h1, #skills h1, #exp h1, #projects h1, #contact h1{
-        font-size: x-large;
-        color:#00abf0;
-        justify-self: center;
-    }
-    
-    #about p, #exp p, #skills p, #projects p{
-        font-size: 16px;
-        color: #ededed;
-    }
-
-    #about {
-        padding: 15px;
-    }
-
-    .about {
-        width: 100%;
-        border-radius: 10px;
-        margin-left: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .about :nth-child(1) {
-        height: 250px; 
-    }
-
-    .about p {
-        font-size: 14px; 
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 20px; 
-        text-align: center;
-    }
-    
-    /* Projects  */
-
-    .card1{
-        width: 300px;
-        height: 320px;
-        font-size: 12px;
-    }
-    
-    .card1_image{
-        width: 300px;
-        height: 320px;
-        position: absolute;
-        border-radius: 18px;
-    }
-    
-    .img1__content{
-        width: 300px;
-        height:200px;
-        top: 270px;
-        padding: 2px;
-    } 
-
-    /* Contact  */
-
-    .contact {
-        gap: 20px;
-        flex-flow: column;
-    }
-
-    /* footer  */
-
-    .footer {
-        background-color: #2d2d2d;
-        color: white;
-        padding: 10px 0;
-        text-align: center;
-        font-size: 10px;
-    }
-
-    .name{
-        font-size: 16px;
-    }
-
-    .social-link{
-        font-size: 14px;
-    }
-    
 }
+
+/* Small screens */
+@media (min-width: 640px) {
+    .card {
+      width: 90%; /* Slightly smaller width for compact layout */
+      padding: 1.2rem;
+    }
+  }
   
-/* Medium screens */
-@media (min-width: 768px) {
-    
-    
-}
+  /* Medium screens */
+  @media (min-width: 768px) {
+    .card {
+      width: 45%; /* Two cards per row */
+      padding: 1.5rem;
+    }
+  }
   
-/* Large screens */
-@media (min-width: 1024px) {
-    
-}
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .card {
+      width: 30%; /* Three cards per row */
+      padding: 1.5rem;
+    }
+  }
   
-/* Extra Large screens */
-@media (min-width: 1280px) {
-    
-}
+  /* Extra Large screens */
+  @media (min-width: 1280px) {
+    .card {
+      width: 22%; /* Four cards per row */
+      padding: 2rem;
+    }
+  }
   
-/* 2XL screens */
-@media (min-width: 1536px) {
-    
-}
+  /* 2XL screens */
+  @media (min-width: 1536px) {
+    .card {
+      width: 20%; /* More compact for larger screens */
+      padding: 2.5rem;
+    }
+  }
